@@ -1,7 +1,24 @@
-function onClickSubmit(){
-    input1 = document.getElementById("input-1")
-    value = input1.value
-    input2 = document.getElementById("input-2")
-    value2 = input2.value
-    return alert(Number(value) + Number(value2))
+
+function concatSeven(){
+    input = document.getElementById("keyboardSeven")
+    value = input.value
+    displayOperation = document.getElementById("inputOperation")
+    if (displayOperation.innerText == ''){
+        displayOperation.innerText = value
+    }else{
+        displayOperation.innerText = displayOperation.innerText + value
+    }
+
+}
+
+function concatSix(){
+    input = document.getElementById("keyboardSix")
+    value = input.innerText
+    displayOperation = document.getElementById("inputOperation")
+    if (displayOperation.innerText == ''){
+        displayOperation.innerText = value
+    }else{
+        displayOperation.innerText = displayOperation.innerText + value
+    }
+
 }

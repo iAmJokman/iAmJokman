@@ -8,9 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="input-1" type="text" placeholder="Numero 1">
-    <input id="input-2" type="text" placeholder="Numero 2">
-    <button id="submit" onclick="onClickSubmit()" type="submit">Result</button>
+    <p  id="inputOperation">0</p>
+    <input id="inputHistory" type="text" placeholder="0">
+    <div>
+        <button id="keyboardClear" type="submit">C</button>
+        <button id="keyboardUnknown" type="submit">U</button>
+        <button id="keyboardPercentage" type="submit" value="%">%</button>
+        <button id="keyboardDivision" type="submit">/</button>
+        <button id="keyboardSeven" onclick="concatSeven()" type="submit" value=7>7</button>
+        <button id="keyboardEight" type="submit">8</button>
+        <button id="keyboardNine" type="submit">9</button>
+        <button id="keyboardMultiplication" type="submit">X</button>
+        <button id="keyboardFour" type="submit">4</button>
+        <button id="keyboardFive" type="submit">5</button>
+        <button id="keyboardSix" type="submit" onclick="concatSix()">6</button>
+        <button id="keyboardMinus" type="submit">-</button>
+        <button id="keyboardOne" type="submit">1</button>
+        <button id="keyboardTwo" type="submit">2</button>
+        <button id="keyboardThree" type="submit">3</button>
+        <button id="keyboardPlus" type="submit">+</button>
+        <button id="keyboardDot" type="submit">.</button>
+        <button id="keyboardZero" type="submit">0</button>
+        <button id="keyboardSave" type="submit">S</button>
+        <button id="keyboardEquals" type="submit">=</button>
+    </div>
+    
     
 </body>
 </html>
