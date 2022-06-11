@@ -3,8 +3,8 @@
     margin: 0 auto;
     place-content: center;
     width: 250px;
-    height: 384px;
-    border-width: 1px;
+    height: 270px;
+    border-width: 2px;
     border-color: black;
     border-style: solid;
     border-radius: 5px;
@@ -29,8 +29,8 @@
 
 .display-container{
     display: grid;
-    grid-template-columns: repeat(4,50px);
-    grid-template-rows: repeat(5,50px);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
     justify-content: center;
     gap: 10px;
 }
@@ -46,4 +46,9 @@
 
 .button:hover{
     transform: translateY(-0.33em);
+}
+
+#keyboardDeletDisplay{
+    grid-column-start: 1 ;
+    grid-column-end: 3;
 }
