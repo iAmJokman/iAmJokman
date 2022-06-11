@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Calculadora</title>
 </head>
 <body>
-    <p  id="inputOperation"></p>
-    <input id="inputHistory" type="text" placeholder="0">
-    <div>
-        <button id="keyboardClear" type="submit" onclick="clear()">C</button>
-        <button id="keyboardUnknown" type="submit">U</button>
-        <button id="keyboardPercentage" type="submit" onclick="operation('%')">%</button>
-        <button id="keyboardDivision" type="submit" onclick="operation('/')">/</button>
-        <button id="keyboardSeven" onclick="concat(7)" type="submit">7</button>
-        <button id="keyboardEight" type="submit" onclick="concat(8)">8</button>
-        <button id="keyboardNine" type="submit" onclick="concat(9)">9</button>
-        <button id="keyboardMultiplication" onclick="operation('*')" type="submit">X</button>
-        <button id="keyboardFour" type="submit" onclick="concat(4)">4</button>
-        <button id="keyboardFive" type="submit" onclick="concat(5)">5</button>
-        <button id="keyboardSix" type="submit" onclick="concat(6)">6</button>
-        <button id="keyboardMinus" type="submit" onclick="operation('-')">-</button>
-        <button id="keyboardOne" type="submit" onclick="concat(1)">1</button>
-        <button id="keyboardTwo" type="submit" onclick="concat(2)">2</button>
-        <button id="keyboardThree" type="submit" onclick="concat(3)">3</button>
-        <button id="keyboardPlus" type="submit" onclick="operation('+')">+</button>
-        <button id="keyboardDot" type="submit">.</button>
-        <button id="keyboardZero" type="submit" onclick="concat(0)">0</button>
-        <button id="keyboardSave" type="submit">S</button>
-        <button id="keyboardEquals" type="submit" onclick="equals()">=</button>
+    <div class="calculator-container">
+        <p  id="inputOperation">0</p>
+        <div class="display-container">
+            <button class="button" id="keyboardDeletDisplay" type="submit" onclick="deleteDisplay()">
+                <span class="button_top">
+                    C
+                </span>
+            </button>
+            <button class="button" id="keyboardUnknown" type="submit" onclick="clear()">U</button>
+            <button class="button" id="keyboardPercentage" type="submit" onclick="operation('%')">%</button>
+            <button class="button" id="keyboardDivision" type="submit" onclick="operation('/')">/</button>
+            <button class="button" id="keyboardSeven" onclick="concat(7)" type="submit">7</button>
+            <button class="button"id="keyboardEight" type="submit" onclick="concat(8)">8</button>
+            <button class="button" id="keyboardNine" type="submit" onclick="concat(9)">9</button>
+            <button class="button" id="keyboardMultiplication" onclick="operation('*')" type="submit">X</button>
+            <button class="button" id="keyboardFour" type="submit" onclick="concat(4)">4</button>
+            <button class="button" id="keyboardFive" type="submit" onclick="concat(5)">5</button>
+            <button class="button" id="keyboardSix" type="submit" onclick="concat(6)">6</button>
+            <button class="button" id="keyboardMinus" type="submit" onclick="operation('-')">-</button>
+            <button class="button" id="keyboardOne" type="submit" onclick="concat(1)">1</button>
+            <button class="button" id="keyboardTwo" type="submit" onclick="concat(2)">2</button>
+            <button class="button" id="keyboardThree" type="submit" onclick="concat(3)">3</button>
+            <button class="button" id="keyboardPlus" type="submit" onclick="operation('+')">+</button>
+            <button class="button" id="keyboardDot" type="submit" onclick="concat('.')">.</button>
+            <button class="button" id="keyboardZero" type="submit" onclick="concat(0)">0</button>
+            <button class="button" id="keyboardSave" type="submit">S</button>
+            <button class="button" id="keyboardEquals" type="submit" onclick="equals()">=</button>
+        </div>
     </div>
     
     
+    
 </body>
+<script src="./main.js"></script>
 </html>

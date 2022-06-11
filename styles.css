@@ -1,0 +1,94 @@
+.calculator-container{
+    display: grid;
+    margin: 0 auto;
+    place-content: center;
+    width: 250px;
+    height: 384px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(208, 212, 219);
+}
+
+#inputOperation{
+    margin: 0 auto;
+    height: 60px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: end;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    background-color: black;
+    color: #06FF00;
+    width: 230px;
+    margin-bottom: 10px;
+}
+
+.display-container{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+    justify-content: center;
+    gap: 10px;
+}
+/*
+.button{
+    border-radius: 0.75em;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: bold;
+    border-color: black;
+    background: gray;
+}
+
+.button:hover{
+    transform: translateY(-0.33em);
+} */
+
+
+button {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+}
+  
+.button_top {
+   display: block;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   -webkit-transform: translateY(-0.2em);
+       -ms-transform: translateY(-0.2em);
+           transform: translateY(-0.2em);
+   -webkit-transition: -webkit-transform 0.1s ease;
+   transition: -webkit-transform 0.1s ease;
+   transition: transform 0.1s ease;
+   transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+  
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+   -webkit-transform: translateY(-0.33em);
+       -ms-transform: translateY(-0.33em);
+           transform: translateY(-0.33em);
+}
+  
+button:active .button_top {
+    /* Push the button downwards when pressed */
+   -webkit-transform: translateY(0);
+       -ms-transform: translateY(0);
+           transform: translateY(0);
+}
